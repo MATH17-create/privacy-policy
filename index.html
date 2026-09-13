@@ -1,108 +1,336 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سياسة الخصوصية - PracMath</title>
+
+    <title>PracMath - Privacy Policy</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
+        * {
             margin: 0;
             padding: 0;
-            direction: rtl;
+            box-sizing: border-box;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1e293b;
+            line-height: 1.7;
         }
 
-        h1 {
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1976d2, #1565c0);
+            color: white;
+            padding: 55px 20px;
             text-align: center;
-            color: #2c3e50;
+        }
+
+        .app-icon {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 18px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 800;
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+
+        header h1 {
+            font-size: 34px;
+            font-weight: 750;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Main container */
+        .container {
+            width: min(900px, calc(100% - 30px));
+            margin: -25px auto 50px;
+        }
+
+        .policy-card {
+            background: white;
+            border-radius: 18px;
+            padding: 40px;
+            box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+        }
+
+        .updated {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 25px;
         }
 
         h2 {
-            color: #34495e;
-            margin-top: 25px;
+            color: #0f172a;
+            font-size: 23px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
         }
 
         p {
-            line-height: 1.8;
-            color: #555;
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 12px;
         }
 
-        .gmail-button {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
+        ul {
+            margin: 10px 0 15px 22px;
+            color: #475569;
         }
 
-        .gmail-button a {
+        li {
+            margin-bottom: 7px;
+            font-size: 15px;
+        }
+
+        strong {
+            color: #1e293b;
+        }
+
+        .highlight {
+            background: #f8fafc;
+            border-left: 4px solid #1976d2;
+            padding: 16px 18px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .highlight p {
+            margin: 0;
+        }
+
+        .contact {
+            background: #f1f7ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .contact a {
+            color: #1976d2;
             text-decoration: none;
-            background-color: #d44638;
-            color: white;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: 0.3s;
+            font-weight: 600;
         }
 
-        .gmail-button a:hover {
-            background-color: #b23121;
+        .contact a:hover {
+            text-decoration: underline;
         }
 
-        .footer {
+        /* Footer */
+        footer {
             text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
-            color: #888;
+            padding: 25px 15px 35px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: #1976d2;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 40px 18px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: calc(100% - 20px);
+                margin-top: -18px;
+            }
+
+            .policy-card {
+                padding: 25px 20px;
+                border-radius: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>سياسة الخصوصية</h1>
+<header>
+    <div class="app-icon">✓</div>
 
-    <p>توضح سياسة الخصوصية هذه كيفية التعامل مع المعلومات في تطبيق PracMath.</p>
+    <h1>PracMath or GraFun 3D</h1>
 
-    <h2>جمع البيانات</h2>
-    <p>تطبيق PracMath لا يقوم بجمع أو تخزين أو مشاركة أي بيانات شخصية للمستخدمين.</p>
+    <p>Privacy Policy</p>
+</header>
 
-    <h2>استخدام البيانات</h2>
-    <p>لا يتم طلب أي معلومات شخصية، ولا يتم تتبع نشاط المستخدم، ولا يتم استخدام أي خدمات تحليل بيانات.</p>
 
-    <h2>مشاركة البيانات</h2>
-    <p>لا يقوم التطبيق بمشاركة أي بيانات مع أطراف خارجية.</p>
+<main class="container">
 
-    <h2>أذونات التطبيق</h2>
-    <p>لا يتطلب التطبيق أي أذونات خاصة للوصول إلى بيانات الجهاز.</p>
+    <section class="policy-card">
 
-    <h2>التغييرات على سياسة الخصوصية</h2>
-    <p>قد يتم تحديث هذه السياسة في حال إضافة ميزات جديدة مستقبلاً. سيتم نشر أي تحديث في هذه الصفحة.</p>
+        <span class="updated">
+            Last updated: September 28, 2026
+        </span>
 
-    <h2>التواصل معنا</h2>
-    <p>يمكنك التواصل معنا عبر البريد الإلكتروني:</p>
 
-    <div class="gmail-button">
-        <a href="mailto:ismailebbour@gmail.com">
-            📧 تواصل عبر Gmail
-        </a>
-    </div>
+        <h2>1. Introduction</h2>
 
-    <div class="footer">
-        آخر تحديث: 2026
-    </div>
-</div>
+        <p>
+            Welcome to <strong>PracMath or GraFun 3D</strong>.
+            This Privacy Policy explains how the PracMath application
+            handles information when you use the app.
+        </p>
+
+        <div class="highlight">
+            <p>
+                <strong>PracMath and GraFun 3D does not collect, store, or share
+                personal user data.</strong>
+            </p>
+        </div>
+
+
+        <h2>2. Information We Collect</h2>
+
+        <p>
+            PracMath and GraFun 3D is designed to provide mathematical practice
+            without requiring users to create an account or provide
+            personal information.
+        </p>
+
+        <p>
+            We do not intentionally collect personal information such as:
+        </p>
+
+        <ul>
+            <li>Name or username</li>
+            <li>Email address</li>
+            <li>Phone number</li>
+            <li>Home address</li>
+            <li>Precise location</li>
+            <li>Personal files or documents</li>
+            <li>Contacts</li>
+        </ul>
+
+
+        <h2>3. How PracMath and GraFun 3D Works</h2>
+
+        <p>
+            PracMath generates arithmetic exercises including
+            addition, subtraction, multiplication, and division.
+            The user can choose the desired difficulty level
+            and practice mathematical operations.<br />
+            GraFun 3D : graph en 3D
+        </p>
+
+
+        <h2>4. Use of Information</h2>
+
+        <p>
+            Since PracMath and GraFun 3D does not collect personal user information,
+            we do not use personal information for advertising,
+            profiling, selling, or sharing with third parties.
+        </p>
+
+
+        <h2>5. Data Storage</h2>
+
+        <p>
+            PracMath and GraFun 3D does not maintain a personal user database.
+            The application does not require an online account
+            to use its mathematical practice features.
+        </p>
+
+
+        <h2>6. Third-Party Services</h2>
+
+        <p>
+            PracMath and GraFun 3D does not share personal user information with
+            third parties.
+        </p>
+
+
+        <h2>7. Children's Privacy</h2>
+
+        <p>
+            PracMath is designed as a mathematics practice application.
+            We do not knowingly collect personal information from
+            children or other users.
+        </p>
+
+
+        <h2>8. Security</h2>
+
+        <p>
+            Because PracMath and GraFun  3D does not collect personal user information,
+            there is no personal information stored by us that could
+            be used to identify individual users.
+        </p>
+
+
+        <h2>9. Changes to This Privacy Policy</h2>
+
+        <p>
+            We may update this Privacy Policy when necessary.
+            Any changes will be reflected on this page by updating
+            the "Last updated" date.
+        </p>
+
+
+        <h2>10. Contact Us</h2>
+
+        <p>
+            If you have any questions about this Privacy Policy
+            or PracMath or GraFun 3D, you can contact us by email.
+        </p>
+
+        <div class="contact">
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:ismailebbour@gmail.com">
+                    ismailebbour@gmail.com
+                </a>
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 <strong>PracMath</strong>. All rights reserved.
+</footer>
 
 </body>
 </html>
